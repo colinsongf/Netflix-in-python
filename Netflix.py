@@ -30,7 +30,8 @@ def predict(user_rating, movie_rating):
     prediction = round(prediction, 1)
     prediction_list.append(prediction)
 
-
+# this is the function that is not working, if you draw out what the loops do, it does not
+# really make sense, i think the loops need to be re-organized
 def actual_rating(user, movie):
     dic1 = {}
     predict(dictionary[user], dictionary[movie])
@@ -39,7 +40,7 @@ def actual_rating(user, movie):
         a,b,c = line.split(" ")
         movie_id = a
         customer_id = b
-        rating = c
+        rating = c     # After changing c to rating, i have changed the rest of the code so it uses the variable rating and not c
         if movie_id in dic1.keys():
             dic1[movie_id][customer_id] = rating
         else:
@@ -49,11 +50,21 @@ def actual_rating(user, movie):
             return rating
     print()
 
-
+# original rmse formula
 def rmse(prediction_list, rating_list):
     assert (len(prediction_list) == len(rating_list))
     sum = 0
     for i in range(len(prediction_list))
         sum += (prediction_list[i] - rating_list[i]) ** 2
+    rmse = math.sqrt(sum / len(prediction_list))
+    print(rmse)
+
+#the rmse formula if we implement a linked list, but we need to make sure the lists are accumulating together 
+def rmse(prediction_list, rating_list):
+    assert (len(prediction_list) == len(rating_list))
+    sum = 0
+    linked = zip(prediction_list, rating_list)
+    for v in linked:
+        sum += (v[0] - v[1]) ** 2
     rmse = math.sqrt(sum / len(prediction_list))
     print(rmse)
