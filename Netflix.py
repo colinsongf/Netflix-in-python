@@ -7,24 +7,26 @@ rating_list = []
 
 # Create dictionary with users' average ratings
 infile = open("u/prat0318/netflix-tests/savant-cacheUsers.txt", "r")
-line = infile.readline()
+line = infile.readline().rstrip("\n")
 while (line != ""):
     a,b = line.split(" ")
     dictionary[a] = b
-    line = infile.readline()
+    line = infile.readline().rstrip("\n")
 infile.close()
 
 # Also add average movie ratings to dictionary
 infile = open("u/prat0318/netflix-tests/savant-cacheMovies.txt", "r")
-line = infile.readline()
+line = infile.readline().rstrip("\n")
 while (line != ""):
     a,b = line.split(" ")
     dictionary[a] = b
-    line = infile.readline()
+    line = infile.readline().rstrip("\n")
 infile.close()
 
 def predict(user_rating, movie_rating):
-    prediction = (user_rating + movie_rating) / 2
+    user_rating=float(user_rating)
+    movie_rating=float(movie_rating)
+    prediction = float((user_rating + movie_rating) / 2)
     prediction = round(prediction, 1)
     prediction_list.append(prediction)
 
@@ -43,8 +45,8 @@ def actual_rating(user, movie):
         else:
             dic1[movie_id] = {customer_id:rating}
         if a == movie and b == user:
-            rating_list.append(c)
-            return c
+            rating_list.append(rating)
+            return rating
     print()
 
 
