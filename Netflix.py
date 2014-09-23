@@ -1,6 +1,7 @@
 # Netflix.py
 import math
 
+dic1 = {} # initiated dic1 as another global variable
 dictionary = {}
 prediction_list = []
 rating_list = []
@@ -23,6 +24,17 @@ while (line != ""):
     line = infile.readline().rstrip("\n")
 infile.close()
 
+# I think we should make the other dictionary (dic1) populate in the same way as dictionary above, done on next few lines
+infile = open("u/prat0318/netflix-tests/cct667-ProbeCacheAnswers.txt", "r")
+line = infile.readline().rstrip('\n')
+while (line != ""):
+    movie_id,customer_id,rating = line.split(" ")
+    dic1[movie_id][customer_id] = rating
+    line = infile.readline().rstrip("\n")
+infile.close()
+# obviously if we keep this we have to remove the one in the actual_rating function, but
+## I think its easier to populate the dic1 this way and just pull info from it 
+
 def predict(user_rating, movie_rating):
     user_rating=float(user_rating)
     movie_rating=float(movie_rating)
@@ -34,7 +46,7 @@ def predict(user_rating, movie_rating):
 # really make sense, i think the loops need to be re-organized
 def actual_rating(user, movie):
     dic1 = {}
-    predict(dictionary[user], dictionary[movie])
+    predict(dictionary[user], dictionary[movie]) # calling this function here insures that the program will never go passed this line, we need to call this function at the end 
     infile = open("u/prat0318/netflix-tests/cct667-ProbeCacheAnswers.txt", "r")
     for line in infile:
         a,b,c = line.split(" ")
