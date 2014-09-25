@@ -1,8 +1,7 @@
 import sys
 
-from Netflix import actual_rating, rmse
+from Netflix import netflix_solve
 
-actual_rating(sys.stdin, sys.stdout)
+netflix_solve(sys.stdin, sys.stdout)
 
-rmse(sys.stdin, sys.stdout)
 
