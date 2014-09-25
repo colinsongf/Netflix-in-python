@@ -41,4 +41,4 @@ def predict(user_rating, movie_rating):
 
 def rmse(prediction_list, rating_list):
     assert (len(prediction_list) == len(rating_list))
-    print("RMSE: " , format((math.sqrt(sum(map(lambda x, y : (x - y) ** 2, prediction_list, rating_list)) / len(prediction_list))), ".2f"))
+    print("RMSE:" , format((math.sqrt(sum(map(lambda x, y : (x - y) ** 2, prediction_list, rating_list)) / len(prediction_list))), ".2f"))
