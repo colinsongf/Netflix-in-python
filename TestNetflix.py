@@ -14,20 +14,20 @@ class Testnettest (TestCase) :
     #def test_netflix_solve(self):
 
     def test_actual_rating(self):
-    c = actual_rating("6287","1013875")
-    self.assertEqual(c, "5")
+        c = actual_rating("6287","1013875")
+        self.assertEqual(c, "5")
 
     def test_actual_rating_2(self):
-    c = actual_rating("10906","2633447")
-    self.assertEqual(c, "1")
+        c = actual_rating("10906","2633447")
+        self.assertEqual(c, "1")
 
     def test_actual_rating_3(self):
-    c = actual_rating("4829","347281")
-    self.assertEqual(c,"4")
+        c = actual_rating("4829","347281")
+        self.assertEqual(c,"4")
 
     def test_actual_rating_4(self):
-    c = actual_rating("2288","733230")
-    self.assertEqual(c, "3")
+        c = actual_rating("2288","733230")
+        self.assertEqual(c, "3")
 
 
     def test_predict(self):
