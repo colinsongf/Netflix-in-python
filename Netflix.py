@@ -34,7 +34,15 @@ def actual_rating(user, movie):
 def predict(user_rating, movie_rating):
     user_rating=float(user_rating)
     movie_rating=float(movie_rating)
-    prediction = float((1.0703 * user_rating + movie_rating) / 2.0703)
+    if user_rating < 2:
+        user_rating -= user_rating * .7
+    if user_rating > 4.2:
+        user_rating += user_rating / 5
+    if movie_rating > 4.2:
+        movie_rating += movie_rating / 5
+    if movie_rating < 2:
+        movie_rating -= movie_rating * .7
+    prediction = float((user_rating + movie_rating) / 2)
     prediction = round(prediction, 1)
     prediction_list.append(prediction)
     print(prediction)
