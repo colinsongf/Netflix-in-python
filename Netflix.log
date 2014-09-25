@@ -1,0 +1,133 @@
+commit 1e673b76a09109d3169427d0ebce76b1d81a26cf
+Author: qab69 <qab69@cs.utexas.edu>
+Date:   Thu Sep 25 17:54:59 2014 -0500
+
+    Commit updated files
+
+commit bbd033a67abb5aaf3b481d8e041267c7f2f71be1
+Author: qab69 <qab69@cs.utexas.edu>
+Date:   Thu Sep 25 16:05:08 2014 -0500
+
+    Commit Netflix.py with interfaces and assertions
+
+commit faec68a86f84c08b4999d187246e6dca44cefaf8
+Author: qab69 <qab69@cs.utexas.edu>
+Date:   Thu Sep 25 01:27:22 2014 -0500
+
+    Commit optimized Netflix.py and RunNetflix.out
+
+commit ebb64d004f37171d35689842619d4cfa825f3baf
+Author: qab69 <qab69@cs.utexas.edu>
+Date:   Thu Sep 25 00:42:31 2014 -0500
+
+    Commit updated Netflix.py and RunNetflix.out
+
+commit f4a98f410691a6258ac0612c5ac7ba66f196338b
+Author: qab69 <qab69@cs.utexas.edu>
+Date:   Wed Sep 24 22:54:33 2014 -0500
+
+    Update Netflix.py and RunNetflix.out
+
+commit ac823628ba6a465ed90c8f67c45419d58a14f721
+Author: qab69 <qab69@cs.utexas.edu>
+Date:   Wed Sep 24 22:50:38 2014 -0500
+
+    Commit updated Netflix.py
+
+commit 590b755e4d38dec15d8942c05541579a35e894a7
+Author: qab69 <qab69@cs.utexas.edu>
+Date:   Wed Sep 24 22:46:20 2014 -0500
+
+    Commit Netflix.py, RunNetflix.out, and RunNetflix.py
+
+commit 482918d686e8d6c53298205574ba9de1fbede574
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Wed Sep 24 22:15:19 2014 -0500
+
+    Update TestNetflix.py
+
+commit 8a74b1756d63f87edb2db32e0278827437ead88f
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Wed Sep 24 22:09:01 2014 -0500
+
+    Update TestNetflix.py
+
+commit 6adcad672fc8f47e3ce1ecabe2abafe6dcac3120
+Author: qab69 <qab69@cs.utexas.edu>
+Date:   Wed Sep 24 21:12:46 2014 -0500
+
+    Commit simplest solution
+
+commit 8cb4cefaf9cbe7d3e413c544851a9865ee19605a
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Wed Sep 24 19:03:50 2014 -0500
+
+    Update RunNetflix.in
+
+commit 7db041a04c16f91b9804ccecd1091712cdbb278a
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Wed Sep 24 19:03:35 2014 -0500
+
+    Update RunNetflix.in
+
+commit 4a8f35d9794fa66bcbb7a1804a1a021472cb25c2
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Tue Sep 23 16:35:04 2014 -0500
+
+    Create README.md
+
+commit 0e986f1271193fc7f2f555dd4954766eaae9d62b
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Tue Sep 23 12:09:48 2014 -0500
+
+    Update Netflix.py
+    
+    made some more comments while working, I think we should implement dic1 in the same way as dictionary and pull info from it
+
+commit 3f691921da579bbb991b08237414126911565638
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Mon Sep 22 18:19:43 2014 -0500
+
+    Update Netflix.py
+    
+    added some comments about the actual_rating function and also added the new rmse function that we talked about in class, (i left the old one as well)
+
+commit 3a17b8f5e9f0ce2fca86f4d2088d2c96f2882c7e
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Mon Sep 22 17:28:56 2014 -0500
+
+    Update Netflix.py
+    
+    updated predict function to turn the strings into floats for calculations, and added rstrips to remove the new lines from the end of the strings
+
+commit 9b57c647605b7459fef7328a927701af99021e08
+Author: Quinn Breslin <quinnbreslin@utexas.edu>
+Date:   Sun Sep 21 19:58:12 2014 -0500
+
+    Commit Netflix.py while working on simplest possible solution
+
+commit 206b9298fb0cee4c4247d3a77e5a19b046c957ca
+Author: Quinn Breslin <quinnbreslin@utexas.edu>
+Date:   Sun Sep 21 19:56:28 2014 -0500
+
+    Commit RunNetflix.py for first time
+
+commit 0e26b5100fdae1e74c9a1941d2d6b8f44cb3231b
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Sat Sep 20 13:51:15 2014 -0500
+
+    Create RunNetflix.out
+
+commit 175b91c7754870f2d571cd8f7724e93ad89b6b67
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Sat Sep 20 13:51:00 2014 -0500
+
+    Create RunNetflix.in
+
+commit b7f2ed7c4a1328dc6412a56cff26f85a0fbbb192
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Fri Sep 19 16:15:33 2014 -0500
+
+    Created python files
+    
+    Created the Netflix.py, RunNetflix.py, and TestNetflix.py files
