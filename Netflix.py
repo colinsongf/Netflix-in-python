@@ -56,6 +56,7 @@ def actual_rating(user, movie):
     assert rating >= 1 and rating <= 5
     rating_list.append(rating)
     netflix_predict(average_users[user], average_movies[movie]) 
+    return rating
 
 # ------------
 # netflix_predict
@@ -85,6 +86,7 @@ def netflix_predict(user_rating, movie_rating):
     prediction = round(prediction, 1)
     prediction_list.append(prediction)
     print(prediction)
+    return prediction
 
 # ------------
 # netflix_rmse
@@ -97,4 +99,6 @@ def netflix_rmse(prediction_list, rating_list):
     Print a string and the calculated RMSE, a float value
     """
     assert (len(prediction_list) == len(rating_list))
-    print("RMSE:" , format((math.sqrt(sum(map(lambda x, y : (x - y) ** 2, prediction_list, rating_list)) / len(prediction_list))), ".2f"))
+    RMSE = format((math.sqrt(sum(map(lambda x, y : (x - y) ** 2, prediction_list, rating_list)) / len(prediction_list))), ".2f")
+    print("RMSE:" , RMSE)
+    return RMSE
